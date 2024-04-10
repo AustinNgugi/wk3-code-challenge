@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {    const ul = documen
 
     // Function to fetch movie data and list the movies
     function movieLists() {
-        fetch("http://localhost:3000/films")
+        fetch("https://json-server-ru4s.onrender.com")
         .then(response => response.json())
         .then(data => {
             data.forEach(movie => {
