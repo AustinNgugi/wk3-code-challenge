@@ -1,7 +1,7 @@
 // Your code here
-const baseApiUrl = 'https://json-server-ru4s.onrender.com';
+const baseApiUrl = "https://json-server-ru4s.onrender.com";
 const filmsUrl = `${baseApiUrl}/films`;
-const ticketsUrl = `${baseApiUrl}/tickets`;
+const ticketsUrl =` ${baseApiUrl}/tickets`;
 
 document.addEventListener("DOMContentLoaded", () => {
   getMovies();
@@ -32,18 +32,6 @@ function renderMovieList(movie) {
   li.classList.add('item');
   li.addEventListener("click", () => {handleMovieClick(movie)})
 }
-function displayImages(movie)
-{
-    const images=document.getElementById("poster");
-    images.textContent=movie.images;
-    images.id-="id" + movie.id;
-    images.classList.add("film");
-    images.classList.add('item');
-    images.addEventListener("click", () => {handleMovieClick(movie)})
-}
-
-
-
 
 
 function handleMovieClick(movie) {
