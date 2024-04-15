@@ -1,5 +1,5 @@
 // Your code here
-const baseApiUrl = "https://json-server-ru4s.onrender.com";
+const baseApiUrl = "http://localhost:3000";
 const filmsUrl = `${baseApiUrl}/films`;
 const ticketsUrl =` ${baseApiUrl}/tickets`;
 
@@ -32,7 +32,6 @@ function renderMovieList(movie) {
   li.classList.add('item');
   li.addEventListener("click", () => {handleMovieClick(movie)})
 }
-
 
 function handleMovieClick(movie) {
   const poster = document.querySelectorAll("img#poster","#poster")
